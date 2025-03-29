@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "endstone_floatingtext"
+version = "1.0.0"
+dependencies = [
+    "mcbe-binarystream >= 1.1.0", # https://github.com/GlacieTeam/BinaryStream-Python
+]
+authors = [{ name = "GlacieTeam" }]
+description = "Floating text plugin for Endstone servers"
+readme = "README.md"
+license = { file = "LICENSE" }
+keywords = ["endstone", "floatingtext"]
+
+[project.urls]
+Homepage = "https://github.com/GlacieTeam/FloatingText"
+
+[project.entry-points."endstone"]
+floatingtext = "endstone_floatingtext:Entry"
