@@ -23,7 +23,7 @@ class Config(TypedDict):
     x: float
     y: float
     z: float
-    dim: float
+    dim: int
 
 
 class Entry(Plugin):
